@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bat Ball Stump</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <h1>Bat Ball Stump Game</h1>
+    <button
+      class="choice-button"
+      onclick="
+    let computerChoice = generateComputerChoice();
+    let result = generateResult('Bat', computerChoice); 
+    showResult('Bat',computerChoice, result);
+  "
+    >
+      <img class="choice-img" src="cricket-bat.png" alt="Bat" />
+    </button>
+    <button
+      class="choice-button"
+      onclick="
+    computerChoice = generateComputerChoice();
+    result = generateResult('Ball', computerChoice);
+    showResult('Ball',computerChoice, result);
+  "
+    >
+      <img class="choice-img" src="cricket_ball.png" alt="Bat" />
+    </button>
+    <button
+      class="choice-button"
+      onclick="
+    computerChoice = generateComputerChoice();
+    result = generateResult('Stump', computerChoice);
+    showResult('Stump',computerChoice, result);
+  "
+    >
+      <img class="choice-img" src="cricket-stump.png" alt="Bat" />
+    </button>
+    <h3 id="user-move"></h3>
+    <h3 id="computer-move"></h3>
+    <h3 id="display-result"></h3>
+    <h3 id="score-card"></h3>
+    <button class="reset-button"
+      class="reset-button"
+      onclick="localStorage.clear() 
+    resetScore()"
+    >
+      <img class="reset-img" src="reset.png" alt="reset"/>
+    </button>
+    <script src="index.js"></script>
+  </body>
+</html>

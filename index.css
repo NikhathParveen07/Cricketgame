@@ -1,0 +1,29 @@
+body {
+  text-align: center;
+  background-color:rgb(228, 160, 104);
+}
+
+.choice-button{
+  background-color: rgba(164, 212, 130);
+  border: none;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+
+}
+
+.choice-img{
+  height: 75px;
+}
+
+.reset-button{
+  background-color: white;
+  border: none;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+.reset-img{
+  height: 75px;
+}
